@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Floristería moderna con quiz para encontrar el ramo perfecto según la emoción que quieres expresar.">
+    <title>Flora Clara | Flores para decirlo mejor</title>
+    <link rel="preconnect" href="https://images.pexels.com">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Flora Clara inicio">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Flora Clara</span>
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#quiz">Encuentra tu ramo</a>
+        <a href="#hoy">Entrega hoy</a>
+        <a href="#momentos">Momentos</a>
+      </nav>
+      <a class="header-action" href="https://wa.me/573001112233?text=Hola%2C%20quiero%20ayuda%20para%20elegir%20un%20ramo" target="_blank" rel="noreferrer">WhatsApp</a>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Entrega el mismo día en tu ciudad</p>
+          <h1>Flores para decirlo mejor</h1>
+          <p class="hero-text">Elige lo que quieres expresar y te recomendamos un ramo listo para regalar, con mensaje personalizado y confirmación antes de salir.</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#quiz">Empezar el quiz</a>
+            <a class="secondary-button" href="#hoy">Ver disponibles hoy</a>
+          </div>
+          <dl class="trust-row" aria-label="Beneficios">
+            <div>
+              <dt>Foto previa</dt>
+              <dd>Antes del envío</dd>
+            </div>
+            <div>
+              <dt>3 pasos</dt>
+              <dd>Sin vueltas</dd>
+            </div>
+            <div>
+              <dt>Hoy</dt>
+              <dd>Pedidos tempranos</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-media" aria-label="Ramo de rosas rosadas">
+          <img src="https://images.pexels.com/photos/5409700/pexels-photo-5409700.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Ramo pastel con rosas y lirios sobre una mesa">
+          <div class="floating-note">
+            <span>Recomendado</span>
+            <strong>Ramo romántico suave</strong>
+            <small>Ideal para amor, perdón o aniversario</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="emotion-strip" aria-label="Categorías emocionales">
+        <button type="button" data-jump-emotion="Amor">Amor</button>
+        <button type="button" data-jump-emotion="Perdon">Perdón</button>
+        <button type="button" data-jump-emotion="Felicidad">Felicidad</button>
+        <button type="button" data-jump-emotion="Gracias">Gracias</button>
+        <button type="button" data-jump-emotion="Apoyo">Apoyo</button>
+        <button type="button" data-jump-emotion="Sorpresa">Sorpresa</button>
+      </section>
+
+      <section class="section quiz-section" id="quiz">
+        <div class="section-heading">
+          <p class="eyebrow">Quiz de recomendación</p>
+          <h2>Dinos qué quieres decir</h2>
+          <p>En menos de un minuto, la página transforma la emoción del cliente en una compra concreta.</p>
+        </div>
+
+        <div class="quiz-shell">
+          <aside class="quiz-progress" aria-label="Progreso del quiz">
+            <span class="step-pill active" data-step-indicator="0">1. Intención</span>
+            <span class="step-pill" data-step-indicator="1">2. Persona</span>
+            <span class="step-pill" data-step-indicator="2">3. Estilo</span>
+            <span class="step-pill" data-step-indicator="3">4. Presupuesto</span>
+            <span class="step-pill" data-step-indicator="4">5. Entrega</span>
+          </aside>
+
+          <form class="quiz-card" id="flowerQuiz">
+            <div class="quiz-step active" data-step="0">
+              <span class="step-label">Paso 1 de 5</span>
+              <h3>¿Qué quieres expresar?</h3>
+              <div class="option-grid">
+                <label><input type="radio" name="emotion" value="Amor" required><span>Quiero enamorar</span></label>
+                <label><input type="radio" name="emotion" value="Perdon"><span>Quiero pedir perdón</span></label>
+                <label><input type="radio" name="emotion" value="Felicidad"><span>Quiero felicitar</span></label>
+                <label><input type="radio" name="emotion" value="Gracias"><span>Quiero agradecer</span></label>
+                <label><input type="radio" name="emotion" value="Apoyo"><span>Quiero acompañar</span></label>
+                <label><input type="radio" name="emotion" value="Sorpresa"><span>Quiero sorprender</span></label>
+              </div>
+            </div>
+
+            <div class="quiz-step" data-step="1">
+              <span class="step-label">Paso 2 de 5</span>
+              <h3>¿Para quién es?</h3>
+              <div class="option-grid compact">
+                <label><input type="radio" name="recipient" value="Pareja" required><span>Pareja</span></label>
+                <label><input type="radio" name="recipient" value="Mama"><span>Mamá</span></label>
+                <label><input type="radio" name="recipient" value="Amiga"><span>Amiga</span></label>
+                <label><input type="radio" name="recipient" value="Familiar"><span>Familiar</span></label>
+                <label><input type="radio" name="recipient" value="Cliente"><span>Cliente</span></label>
+                <label><input type="radio" name="recipient" value="Alguien especial"><span>Alguien especial</span></label>
+              </div>
+            </div>
+
+            <div class="quiz-step" data-step="2">
+              <span class="step-label">Paso 3 de 5</span>
+              <h3>¿Qué estilo le va mejor?</h3>
+              <div class="option-grid compact">
+                <label><input type="radio" name="style" value="Romantico" required><span>Romántico</span></label>
+                <label><input type="radio" name="style" value="Elegante"><span>Elegante</span></label>
+                <label><input type="radio" name="style" value="Colorido"><span>Colorido</span></label>
+                <label><input type="radio" name="style" value="Delicado"><span>Delicado</span></label>
+                <label><input type="radio" name="style" value="Moderno"><span>Moderno</span></label>
+                <label><input type="radio" name="style" value="Abundante"><span>Abundante</span></label>
+              </div>
+            </div>
+
+            <div class="quiz-step" data-step="3">
+              <span class="step-label">Paso 4 de 5</span>
+              <h3>¿Cuál es tu presupuesto?</h3>
+              <div class="option-grid compact">
+                <label><input type="radio" name="budget" value="Esencial" required><span>Esencial</span></label>
+                <label><input type="radio" name="budget" value="Especial"><span>Especial</span></label>
+                <label><input type="radio" name="budget" value="Premium"><span>Premium</span></label>
+                <label><input type="radio" name="budget" value="Personalizado"><span>Personalizado</span></label>
+              </div>
+            </div>
+
+            <div class="quiz-step" data-step="4">
+              <span class="step-label">Paso 5 de 5</span>
+              <h3>¿Cuándo debe llegar?</h3>
+              <div class="option-grid compact">
+                <label><input type="radio" name="delivery" value="Hoy" required><span>Hoy</span></label>
+                <label><input type="radio" name="delivery" value="Manana"><span>Mañana</span></label>
+                <label><input type="radio" name="delivery" value="Fecha programada"><span>Fecha programada</span></label>
+                <label><input type="radio" name="delivery" value="Necesito asesoria"><span>Necesito asesoría</span></label>
+              </div>
+            </div>
+
+            <div class="quiz-actions">
+              <button class="ghost-button" type="button" id="prevStep" disabled>Anterior</button>
+              <button class="primary-button" type="button" id="nextStep">Siguiente</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="results-panel" id="resultsPanel" hidden>
+          <div class="results-heading">
+            <p class="eyebrow">Selección lista</p>
+            <h3>Estas son tus mejores opciones</h3>
+            <p id="resultSummary"></p>
+          </div>
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+      </section>
+
+      <section class="section today-section" id="hoy">
+        <div class="section-heading">
+          <p class="eyebrow">Disponibles hoy</p>
+          <h2>Compra rápida para pedidos urgentes</h2>
+          <p>Una franja así ayuda a convertir a quien llegó con prisa y necesita resolver en minutos.</p>
+        </div>
+        <div class="today-grid">
+          <article class="today-card">
+            <img src="https://images.pexels.com/photos/5409700/pexels-photo-5409700.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Florista organizando ramo pastel con rosas y lirios">
+            <div>
+              <span>Más pedido</span>
+              <h3>Abrazo Pastel</h3>
+              <p>Rosas suaves, lirios y tarjeta personalizada.</p>
+              <a href="https://wa.me/573001112233?text=Hola%2C%20quiero%20el%20ramo%20Abrazo%20Pastel" target="_blank" rel="noreferrer">Pedir por WhatsApp</a>
+            </div>
+          </article>
+          <article class="today-card">
+            <img src="https://images.pexels.com/photos/36171901/pexels-photo-36171901.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Ramo elegante de flores naranjas y crema con follaje">
+            <div>
+              <span>Elegante</span>
+              <h3>Luz de Tarde</h3>
+              <p>Tonos crema y naranja para gratitud o celebración.</p>
+              <a href="https://wa.me/573001112233?text=Hola%2C%20quiero%20el%20ramo%20Luz%20de%20Tarde" target="_blank" rel="noreferrer">Pedir por WhatsApp</a>
+            </div>
+          </article>
+          <article class="today-card">
+            <img src="https://images.pexels.com/photos/12362043/pexels-photo-12362043.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Flores coloridas en una floristeria">
+            <div>
+              <span>Colorido</span>
+              <h3>Alegria Viva</h3>
+              <p>Flores vibrantes para cumpleaños, gracias o sorpresa.</p>
+              <a href="https://wa.me/573001112233?text=Hola%2C%20quiero%20el%20ramo%20Alegria%20Viva" target="_blank" rel="noreferrer">Pedir por WhatsApp</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section moments-section" id="momentos">
+        <div class="section-heading">
+          <p class="eyebrow">Conversión emocional</p>
+          <h2>La tienda se organiza por lo que el cliente siente</h2>
+        </div>
+        <div class="moment-grid">
+          <article>
+            <span>01</span>
+            <h3>Perdón sin exagerar</h3>
+            <p>Ramos suaves, mensajes cortos y entrega discreta.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Cumpleaños hoy</h3>
+            <p>Opciones listas, extras y confirmación inmediata.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Gracias con elegancia</h3>
+            <p>Flores sobrias para clientes, jefes y detalles corporativos.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Amor a distancia</h3>
+            <p>Foto del ramo, tarjeta y aviso al entregar.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Flora Clara</strong>
+        <p>Plantilla ligera para una floristería con enfoque en conversión.</p>
+      </div>
+      <a href="https://wa.me/573001112233?text=Hola%2C%20quiero%20cotizar%20una%20pagina%20como%20esta" target="_blank" rel="noreferrer">Cotizar por WhatsApp</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
